@@ -19,15 +19,16 @@ $.fn.rotateMeSenpai = function(angle) {
 };
 
 function chie(){
-	var a = document.createElement('audio');
 	a.setAttribute('src', 'chie.mp3');
+	a.currentTime = 0.2; // a little fucking offset bitch
 	a.play();
+	
 	$('.nk-logo').rotateMeSenpai(-360);
 }
 
 function hikku(){
-	var a = document.createElement('audio');
 	a.setAttribute('src', 'hikku.mp3');
+	a.currentTime = 0.2; // a little fucking offset bitch
 	a.play();
 	$('.nk-logo').rotateMeSenpai(360);
 }
