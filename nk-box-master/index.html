@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NK - CHIE/HIKKU</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="nk-chie-hikku.js"></script>
+    <style>
+      body { 
+        background-color: #fbbcff; 
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img class="nk-logo" src="res/images/nk.png"/>
+    </center>
+	<center>
+		<button id="randomson" onClick="randomson()">Clique pas !</button>
+	</center>
+	<table>
+      <tr>
+        <td><b>[C]</b></td>
+        <td><button id="chie" onClick="playSound('chie')">Chie</button></td>
+      </tr>
+      <tr>
+        <td><b>[H]</b></td>
+        <td><button id="hikku" onClick="playSound('hikku')">Hikku</button></td>
+      </tr>
+	  <tr>
+	  	<td><b>Relapse Alviz LA GAGNE</b></td>
+        <td><button id="yoggsaron" onClick="playSound('yoggsaron')">Yogg Saron</button></td>
+        <td><button id="saler" onClick="playSound('saler')">Le sel</button></td>
+        <td><button id="neverloose" onClick="playSound('neverloose')">JAMAIS</button></td>
+      </tr>
+    </table>
+  </body>
+</html>
