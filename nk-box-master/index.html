@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>NKBOX</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="nk-box.js"></script>
+    <style>
+      body { 
+        background-color: #fbbcff; 
+        font-family: sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img class="nk-logo" src="res/images/nk.png"/>
+    </center>
+	<center>
+		<button id="randomson" onClick="randomson()">Random</button>
+		<button id="cliquepas" onClick="cliquepas()">Clique pas !</button>
+	</center>
+	<table>
+      <tr>
+        <td><b>Lee sin</b></td>
+        <td><button id="chie" class="btnSound" onClick="playSound('chie')">Chie</button></td>
+        <td><button id="hikku" class="btnSound" onClick="playSound('hikku',0.2)">Hikku</button></td>
+      </tr>
+	  <tr>
+		<td><b>Jojo</b></td>
+        <td><button id="ohmygod" class="btnSound" onClick="playSound('ohmygod')">...</button></td>
+        <td><button id="ohmygod" class="btnSound" onClick="playSound('sonnadabitch')">sonnadabitch</button></td>
+        <td><button id="ohmygod" class="btnSound" onClick="playSound('oh_no', 2.5)">OH NOO</button></td>
+	  </tr>
+	  <tr>
+	  	<td><b>Relapse Alviz LA GAGNE</b></td>
+        <td><button id="yoggsaron" class="btnSound" onClick="playSound('yoggsaron')">Yogg Saron</button></td>
+        <td><button id="saler" class="btnSound" onClick="playSound('saler')">Le sel</button></td>
+        <td><button id="neverloose" class="btnSound" onClick="playSound('neverloose')">JAMAIS</button></td>
+    </tr>
+    <tr>
+      <td><b>1sec</b></td>
+      <td><button id="ah" class="btnSound" onClick="playSound('ah')">Ah.</button></td>
+    </tr>
+    </table>
+  </body>
+</html>
