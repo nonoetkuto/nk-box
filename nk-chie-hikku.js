@@ -19,7 +19,7 @@ $.fn.rotateMeSenpai = function(angle) {
 };
 
 function chie(){
-	a.setAttribute('src', 'chie.mp3');
+	a.setAttribute('src', 'res/sounds/chie.mp3');
 	a.currentTime = 0.2; // a little fucking offset bitch
 	a.play();
 	
@@ -27,14 +27,14 @@ function chie(){
 }
 
 function hikku(){
-	a.setAttribute('src', 'hikku.mp3');
+	a.setAttribute('src', 'res/sounds/hikku.mp3');
 	a.currentTime = 0.2; // a little fucking offset bitch
 	a.play();
 	$('.nk-logo').rotateMeSenpai(360);
 }
 
 function ohmygod(){
-	a.setAttribute('src', 'ohmygod.mp3');
+	a.setAttribute('src', 'res/sounds/ohmygod.mp3');
 	a.currentTime = 0.2; // a little fucking offset bitch
 	a.play();
 	
@@ -65,13 +65,13 @@ $(document).keypress(function(event) {
 	var angle = 0;
 	switch(event.which) {
 		case CHIE: 
-		a.setAttribute('src', 'chie.mp3');
+		a.setAttribute('src', 'res/sounds/chie.mp3');
 		a.play();
 		angle = -360;
 		break;
 
 		case HIKKU:
-		a.setAttribute('src', 'hikku.mp3');
+		a.setAttribute('src', 'res/sounds/hikku.mp3');
 		a.currentTime = 0.2; // a little fucking offset bitch
 		a.play();
 		angle = 360;
