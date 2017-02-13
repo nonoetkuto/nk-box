@@ -23,9 +23,6 @@ function playSound(name, offset){
 	if(offset != undefined){
 		a.currentTime = offset; // a little fucking offset bitch
 	}
-	else{
-		a.currentTime = 0.2;
-	}
 	a.play();
 	
 	if(hasard(0,1)== 0)
