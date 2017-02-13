@@ -18,6 +18,22 @@ $.fn.rotateMeSenpai = function(angle) {
   });
 };
 
+function playSound(name, offset){
+	a.setAttribute('src', 'res/sounds/'+name+'.mp3');
+	if(offset != undefined){
+		a.currentTime = offset; // a little fucking offset bitch
+	}
+	else{
+		a.currentTime = 0.2;
+	}
+	a.play();
+	
+	if(hasard(0,1)== 0)
+		$('.nk-logo').rotateMeSenpai(-360);
+	else
+		$('.nk-logo').rotateMeSenpai(360);
+}
+
 function chie(){
 	a.setAttribute('src', 'res/sounds/chie.mp3');
 	a.currentTime = 0.2; // a little fucking offset bitch
@@ -49,13 +65,13 @@ function randomson(){
 	var rng = hasard(1,3);
 	switch(rng){
 		case 1:
-			chie();
+			playSound('chie');
 		break;
 		case 2:
-			hikku();
+			playSound('hikku');
 			break;
 		case 3:
-			ohmygod();
+			playSound('ohmygod');
 			break;
 	}
 }
