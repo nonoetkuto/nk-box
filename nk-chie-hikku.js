@@ -33,6 +33,34 @@ function hikku(){
 	$('.nk-logo').rotateMeSenpai(360);
 }
 
+function ohmygod(){
+	a.setAttribute('src', 'ohmygod.mp3');
+	a.currentTime = 0.2; // a little fucking offset bitch
+	a.play();
+	
+	//$('.nk-logo').rotateMeSenpai(-360);
+}
+
+function hasard(min,max){
+	return min+Math.floor(Math.random()*(max-min+1));
+}
+
+function randomson(){
+	var rng = hasard(1,3);
+	switch(rng){
+		case 1:
+			chie();
+		break;
+		case 2:
+			hikku();
+			break;
+		case 3:
+			ohmygod();
+			break;
+	}
+}
+
+
 $(document).keypress(function(event) {
 	var angle = 0;
 	switch(event.which) {
