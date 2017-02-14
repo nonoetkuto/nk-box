@@ -17,13 +17,14 @@
       <img class="nk-logo" src="res/images/nk.png"/>
     </center>
 	<center>
-		<button id="randomson" onClick="randomson()">Clique pas !</button>
+		<button id="randomson" onClick="randomson()">Random</button>
+		<button id="cliquepas" onClick="cliquepas()">Clique pas !</button>
 	</center>
 	<table>
       <tr>
         <td><b>Lee sin</b></td>
-        <td><button id="chie" class="btnSound" onClick="playSound('chie')">Chie</button></td>
-        <td><button id="hikku" class="btnSound" onClick="playSound('hikku',0.2)">Hikku</button></td>
+        <td><button id="chie" class="btnSound" onClick="playSound('chie');firstQuest('chie')">Chie</button></td>
+        <td><button id="hikku" class="btnSound" onClick="playSound('hikku', 0.2);firstQuest('hikku')">Hikku</button></td>
       </tr>
 	  <tr>
 		<td><b>Jojo</b></td>
@@ -39,7 +40,7 @@
     </tr>
     <tr>
       <td><b>1sec</b></td>
-      <td><button id="ah" class="btnSound" onClick="playSound('ah')">Ah.</button></td>
+      <td><button id="ah" class="btnSound" onClick="playSound('ah',0.3)">Ah.</button></td>
     </tr>
     </table>
   </body>
